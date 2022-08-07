@@ -1,0 +1,169 @@
+0934635913
+
+
+abc01011629271
+pass facebook
+
+
+//========
+push to git 
+
+git add --all
+git commite -m messge
+git push 
+
+  or
+ 
+git pull
+
+first 
+- git init 
+- git add .
+- git status
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin https://github.com/ammar871/adminMatbkh24.git
+- git push -u origin main
+ 
+
+//   sha1 
+gradlew signingReport 
+
+
+
+
+
+
+  keytool -genkey -v -keystore G:\keyStoriesGooglePlay\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+
+
+006ce4f9093b72f40109e59f89571e09de5IABL0+QNHcUK43Qxv6rH/WOwjgL4OB2aouMGu0x6Arggqwx+f9gAAAAAEACtoj/mDwaqYQEAAQCfwqhh
+
+
+
+flutter build apk --release --no-shrink
+
+// bundel
+flutter build appbundle.
+// laravel
+php artisan serve
+// icon app
+flutter pub run flutter_launcher_icons:main
+//create laravel
+composer create-project laravel/laravel ProjectName 
+// sha1
+gradlew signingReport
+
+// migrations dotnet
+dotnet ef migrations add InitialCreate
+ // update database 
+dotnet ef database update
+// create
+dotnet new webapi -n name 
+ngrok.exe http -host-header=rewrite localhost:5000
+
+
+ngrok.exe http -host-header=rewrite http://localhost:5021
+//flutter build web
+
+
+flutter run --no-sound-null-safety
+
+av 
+
+//
+github tashleeh
+ tashleeh.2021@gmail.com
+ tashleeh@2120
+
+// status donya
+0 معلقة
+1 حالية 
+2 مرفوضة 
+
+=================================
+
+
+
+app icon
+
+dependencies:
+  flutter_launcher_icons: ^0.9.3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo_icon.png"
+#  adaptive_icon_background: "#ffffff"
+#  adaptive_icon_foreground: "assets/images/logo_back.png"
+
+flutter pub get
+flutter pub run flutter_launcher_icons:main
+
+//======================
+splash screen
+
+dependencies:
+  flutter_native_splash: ^2.2.4
+
+
+    sdk: flutter
+flutter_native_splash:
+  color: "#eeec50"
+  android_gravity: center
+  image: assets/images/logo_icon_provider.png
+  android: true
+  ios: true
+
+
+flutter pub get
+flutter pub run flutter_native_splash:create
+
+//=====
+awamrake
+Eagle@0123456789
+awamrakawamrak@gmail.com
+Password 01121288341
+
+
+
+
+//
+ Center(
+        child: Container(
+          decoration: BoxDecoration(
+
+          ),
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          height: 50,
+         width: double.infinity,
+          child: LiquidLinearProgressIndicator(
+            value:value/100, // Defaults to 0.5.
+            valueColor: AlwaysStoppedAnimation(mainColor), // Defaults to the current Theme's accentColor.
+            backgroundColor: Colors.white, // Defaults to the current Theme's backgroundColor.
+            borderColor: Colors.black,
+            borderRadius: 10,
+            borderWidth: 2.0,
+            direction: Axis.horizontal, // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.vertical.
+            center:Text(
+              value.toString() + "%",
+              style: TextStyle(
+                fontSize: 12.0,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ),
+      )
+
+
+
+////
+Are_you_sure_remove_status?
+"لديك تقييم جديد من احد الزوار"
+"تقييم الخدمات"
+"الحد الأقصي لعدد الاشخاص : "
+"يجب ان يكون عدد الاشخاص اكبر من 0"
+
+

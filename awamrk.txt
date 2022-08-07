@@ -1,0 +1,114 @@
+
+// plesk web install
+https://get.plesk.com/
+
+sudo apt update
+sudo apt -y install vim bash-completion wget
+sudo apt -y upgrade
+
+//install dotnet 
+
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+
+
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y dotnet-sdk-6.0
+
+
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-6.0
+
+// publish
+dotnet publish --configuration Release
+cd /var/www/vhosts/awamrk.api.urapp.site
+dotnet <app_assembly.dll>
+
+//create database
+
+// redirect to 5000
+
+location ~/ {
+	proxy_pass         http://127.0.0.1:60014;
+	proxy_http_version 1.1;
+	proxy_set_header   Upgrade $http_upgrade;
+	proxy_set_header   Connection keep-alive;
+	proxy_set_header   Host $host;
+	proxy_cache_bypass $http_upgrade;
+	proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header   X-Forwarded-Proto $scheme;
+}
+
+
+// test any api
+
+// create service
+sudo nano /etc/systemd/system/awamrk.service
+
+[Unit]  
+Description=awamrk  
+[Service]  
+WorkingDirectory=/var/www/vhosts/awamrk.api.urapp.site/httpdocs
+ExecStart=/usr/bin/dotnet /var/www/vhosts/awamrk.api.urapp.site/httpdocs/awamrakeApi.dll
+Restart=always  
+RestartSec=10  
+SyslogIdentifier=netcore-demo  
+User=www-data  
+Environment=ASPNETCORE_ENVIRONMENT=Production  
+[Install]  
+WantedBy=multi-user.target 
+
+
+
+ctr+x  y enter
+
+
+sudo systemctl enable awamrk.service
+sudo systemctl start donya.service 
+sudo systemctl restart awamrk.service 
+
+// fix images upload
+sudo chmod -R 777 /var/www/vhosts/donyagroup.urapp.site/httpdocs
+
+
+
+
+
+// awamrk
+
+// awmarkw baseUrl
+https://awamrk.api.urapp.site
+
+ssh root@143.198.58.219
+https://143.198.58.219:8443
+
+password
+102010020010002000Abc0161820a
+
+
+
+
+
+// Deploy .Net Core web API to Linux Ubuntu
+https://labs.sogeti.com/deploy-net-core-web-api-to-linux-ubuntu/
+
+
+//==================
+دونيا
+AdminDonya
+ssh root@159.223.197.81
+159.223.197.81
+102010020010002000Abc0161820a
+
+
+key
+A00300-HQ5C09-SZF461-Y9VM42-5KVN20
+
+
+
+

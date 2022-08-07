@@ -1,0 +1,69 @@
+Deploy .Net Core web API to Linux Ubuntu
+https://labs.sogeti.com/deploy-net-core-web-api-to-linux-ubuntu/
+
+
+//server credintials
+admin
+ssh root@143.244.147.176
+https://143.244.147.176:8443
+102010020010002000Abc0161820a
+
+
+// home directory
+/var/www/vhosts/urapp.site/carsa.urapp.site
+
+// channge port
+"urls": "http://localhost:5009",
+
+
+// create service
+-
+sudo nano /etc/systemd/system/carsa.service
+
+-
+[Unit]
+Description=tashleeh
+
+[Service]
+WorkingDirectory=/var/www/vhosts/urapp.site/carsa.urapp.site
+ExecStart=/usr/bin/dotnet /var/www/vhosts/urapp.site/carsa.urapp.site/carsaApi.dll
+Restart=always
+# Restart service after 10 seconds if the dotnet service crashes:
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-example
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl enable carsa.service
+sudo systemctl start donya.service
+sudo systemctl restart donya.service
+sudo systemctl stop carsa.service
+
+
+sudo systemctl restart tall3at.service
+sudo systemctl start tall3at.service
+ "CarsaApiConnection":"Server=localhost;Initial Catalog=CarsaDB;User ID=CommanderAPI;Password=01011629271;"
+
+// mysql package
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.0-beta.1" />
+
+
+// awmarkw baseUrl
+https://awamrk.api.urapp.site
+
+// dandon baseUrl
+https://dndun.urapp.site
+
+
+==================
+دونيا
+AdminDonya
+ssh root@159.223.197.81
+159.223.197.81
+102010020010002000Abc0161820a
+donyagroup.urapp.site	
