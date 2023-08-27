@@ -67,3 +67,11 @@ ssh root@159.223.197.81
 159.223.197.81
 102010020010002000Abc0161820a
 donyagroup.urapp.site	
+
+//hatli 
+ssh root@138.197.32.25
+https://138.197.32.25:7800/cd44c9dc
+ywjlvzci
+5c1200b2
+102010020010002000Abc0161820a
+sudo systemctl restart hatli.service
