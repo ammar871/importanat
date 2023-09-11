@@ -166,4 +166,10 @@ Are_you_sure_remove_status?
 "الحد الأقصي لعدد الاشخاص : "
 "يجب ان يكون عدد الاشخاص اكبر من 0"
 
+// limozin
+storePassword=l01011629271
+keyPassword=l01011629271
+keyAlias=limozine
+storeFile=../app/limozine-keystore.jks
+
 
