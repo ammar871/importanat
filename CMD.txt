@@ -171,5 +171,10 @@ storePassword=l01011629271
 keyPassword=l01011629271
 keyAlias=limozine
 storeFile=../app/limozine-keystore.jks
+// hatli 
+storePassword=Abc0161820@
+keyPassword=Abc0161820@
+keyAlias=hatli
+storeFile=../app/hatli-keystore.jks
 
 
